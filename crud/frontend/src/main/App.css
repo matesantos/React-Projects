@@ -3,6 +3,7 @@
 
     --logo-heigth: 100px;
     --header-heigth: 100px;
+    --menu-top-heigth: 70px;
     --aside-width: 225px;
     --footer-heigth: 40px;
 
@@ -51,3 +52,32 @@ footer.footer{
     grid-area: footer;
 }
 
+@media(max-width: 768px){
+    .app{
+        grid-template-rows: var(--header-heigth)
+                            var(--menu-top-heigth)
+                            1fr
+                            var(--footer-heigth);
+        grid-template-columns: var(--aside-width) 1fr;
+        grid-template-areas: 'logo header'
+                             'menu menu'
+                             'content content'
+                             'footer footer';
+
+
+    }
+}
+
+@media(max-width: 576px){
+    .app{
+        grid-template-rows: var(--logo-heigth)
+                            var(--menu-top-heigth)
+                            1fr
+                            var(--footer-heigth);
+        grid-template-columns: 1fr;
+        grid-template-areas: 'logo'
+                             'menu'
+                             'content'
+                             'footer';
+    }
+}

@@ -1,12 +1,16 @@
 {
-    "users":[{
-        "id": 1,
-        "name": "Arthur Oliveira",
-        "email": "aoliveira@cod3r.com.br"
+  "users": [
+    {
+      "nome": "",
+      "email": "matesantos89@gmail.com.br",
+      "name": "MATEUS FERREIRA DOS SANTOS",
+      "id": 9
     },
     {
-        "id": 2,
-        "name": "Maria Julia da Silva",
-        "email": "mjds@empresa.com"
-    }]
+      "nome": "",
+      "email": "matesantos89@gmail.com",
+      "name": "mateus",
+      "id": 10
+    }
+  ]
 }
